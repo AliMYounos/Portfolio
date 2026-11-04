@@ -1,8 +1,8 @@
-:root{--ink:#12344D;--teal:#0284C7;--gold:#67E8F9;--cream:#F8FAFC;--line:#E2E8F0}
+:root{--ink:#2E1F1A;--teal:#8D5C49;--gold:#D4947A;--cream:#F7EFE9;--line:#E6D6CB}
 *{box-sizing:border-box}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.6}
 a{color:inherit}
-.hero{background:var(--ink);color:#e8f1f0}
+.hero{background:var(--ink);color:#F3E9E2}
 .hero-in{max-width:1000px;margin:0 auto;padding:48px 28px 44px;display:grid;grid-template-columns:400px 1fr;gap:40px;align-items:center}
 .hero img{width:100%;height:auto;border-radius:14px;border:3px solid var(--gold);display:block}
 h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.08;margin:0 0 6px;color:#fff}
@@ -11,30 +11,30 @@ h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.08;margin:0 0 6px;color:#fff}
 .meta{margin-top:14px;font-size:.98rem}.meta a{color:var(--gold);font-weight:700;text-decoration:none;margin:0 2px}.meta a:hover{text-decoration:underline}
 .wrap{max-width:1000px;margin:0 auto;padding:36px 28px 56px}
 .two{display:block;margin-bottom:34px}.pr{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 12px}.pr b{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;width:150px;color:var(--teal)}.pr span{border:2px solid var(--ink);border-radius:999px;padding:3px 14px;font-size:.92rem;font-weight:600}
-.mini{background:var(--ink);color:#e8f1f0;border-radius:14px;padding:18px 22px}
+.mini{background:var(--ink);color:#F3E9E2;border-radius:14px;padding:18px 22px}
 .mini h4{margin:0 0 6px;color:var(--gold);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
 .mini p{margin:0}
 h3{font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 6px;border-bottom:3px solid var(--gold);display:inline-block;padding-bottom:3px}
-.intro{margin:8px 0 18px;color:#4a6670}
+.intro{margin:8px 0 18px;color:#6B5249}
 .banner{width:100%;height:auto;border-radius:14px;display:block;margin:0 0 22px;border:3px solid var(--gold)}
 .card{display:grid;grid-template-columns:90px 1fr;column-gap:20px;padding:30px 0;margin:0;border-top:2px solid var(--ink);position:relative}.card>*{grid-column:2}.card .num{grid-column:1;grid-row:1/span 3;background:none;font-size:3rem;line-height:1;color:var(--teal);padding:0;font-weight:800;border-radius:0}
 .num{display:inline-block;background:var(--gold);color:var(--ink);font-weight:800;font-size:.85rem;border-radius:6px;padding:1px 9px}
 .card h2{font-size:1.55rem;margin:0 0 2px;line-height:1.2}
 .tag{color:var(--teal);font-weight:700;font-size:.9rem;margin-bottom:10px}
 .card p{margin:0 0 12px}
-.row{display:grid;grid-template-columns:190px 1fr;gap:14px;padding:9px 0;border-top:1px dashed #d9c98c}
+.row{display:grid;grid-template-columns:190px 1fr;gap:14px;padding:9px 0;border-top:1px dashed #DCC8BA}
 .k{font-weight:800;font-size:.92rem}.v{font-size:.98rem}
 .links{margin-top:12px}
 .links a{display:inline-block;background:var(--ink);color:var(--gold);text-decoration:none;border-radius:8px;padding:9px 16px;margin:0 8px 8px 0;font-weight:700;font-size:.95rem}
 .links a:hover{background:var(--teal);color:#fff}
-.note{margin-top:8px;font-size:.88rem;color:#5c7680;font-style:italic}
+.note{margin-top:8px;font-size:.88rem;color:#7A655C;font-style:italic}
 .edu{border-top:2px solid var(--ink);padding:26px 0 8px;margin:0}
 .edu h4{margin:0 0 8px;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase}
 .edu ul{margin:0;padding-left:20px}.edu li{margin-bottom:5px}
-footer{color:#5c7680;font-size:.88rem;margin-top:22px}
+footer{color:#7A655C;font-size:.88rem;margin-top:22px}
 @media(max-width:760px){
  .hero-in{grid-template-columns:1fr;text-align:left;gap:20px;padding:26px 18px 34px;justify-items:stretch}
  .hero img{width:100%}
  .wrap{padding:28px 18px 44px}.two{grid-template-columns:1fr}
  .pr b{width:100%}.row{grid-template-columns:1fr;gap:2px}.card{grid-template-columns:1fr;padding:24px 0}.card>*{grid-column:1}.card .num{grid-column:1;grid-row:auto;font-size:2rem;margin-bottom:4px}body{font-size:16px}.pr b{width:100%}
-}
+      }
