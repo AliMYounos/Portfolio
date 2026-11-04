@@ -3,7 +3,9 @@
 <meta name="description" content="Aspiring Product Manager and Product Owner. A pharmacist moving into product, with three product case studies.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body>
+<link rel="stylesheet" href="style.css">
+<script>if("IntersectionObserver" in window&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")</script>
+</head><body>
 <header class="hero"><div class="hero-in">
 <img src="profile-photo.jpg" alt="Ali Mohammad Younos">
 <div><h1>Ali Mohammad Younos</h1><div class="role">Aspiring Product Manager · Product Owner</div>
@@ -19,7 +21,8 @@
 <div class="two"><div class="pr"><b>Healthcare lens</b><span>Community pharmacy</span><span>Customer needs</span><span>B2C workflows</span></div>
 <div class="pr"><b>Product practice</b><span>Discovery</span><span>Prioritization</span><span>Prototyping</span><span>Measurement</span><span>B2B solutions</span></div>
 </div>
-<h3>Case studies and MVPs</h3><div class="intro">Three projects showing how I frame customer problems, choose a focused product direction, and think about learning and success.</div>
+<section class="cases" id="cases">
+<header class="cases-head"><h2 class="sec-title">Case studies and MVPs</h2><p class="intro">Three projects showing how I frame customer problems, choose a focused product direction, and think about learning and success.</p></header>
 <img class="banner" src="thinking-photo.jpg" alt="Thinking through a product problem">
 
 <section class="card"><div class="num">01</div>
@@ -73,8 +76,45 @@
 <div class="links"><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1-crcpYuJvO4HUbAxcR8dkk1TQrbL6OGj/view?usp=drivesdk">View the presentation ↗</a>
 </div>
 </section>
-<div class="edu"><h4>Education and learning</h4><ul><li>Bachelor's degree in Pharmacy · Assiut University</li><li>Product Roadmapping · Product School</li><li>Product Management Fundamentals and Achieving Product-Market Fit · edX</li><li>Digital Marketing · Udacity</li></ul></div>
-<div class="edu"><h4>Contact</h4><a href="mailto:AliMohammadYounos@gmail.com">AliMohammadYounos@gmail.com</a> · <a target="_blank" rel="noopener" href="https://linkedin.com/in/alimyounos">LinkedIn</a>
+</section>
+<div class="edu"><h2 class="sec-title sm">Education and learning</h2><ul><li>Bachelor's degree in Pharmacy · Assiut University</li><li>Product Roadmapping · Product School</li><li>Product Management Fundamentals and Achieving Product-Market Fit · edX</li><li>Digital Marketing · Udacity</li></ul></div>
+<div class="edu"><h2 class="sec-title sm">Contact</h2><a href="mailto:AliMohammadYounos@gmail.com">AliMohammadYounos@gmail.com</a> · <a target="_blank" rel="noopener" href="https://linkedin.com/in/alimyounos">LinkedIn</a>
 </div>
 <footer>© 2026 Ali Mohammad Younos</footer></div>
+<script>
+(function(){
+try{
+ var d=document,root=d.documentElement;
+ if(!root.classList.contains("js"))return;
+ function tag(sel,cls,step){
+  var els=[].slice.call(d.querySelectorAll(sel)),count={};
+  els.forEach(function(el,i){
+   el.classList.add("reveal");if(cls)el.classList.add(cls);
+   var p=el.parentNode;p.__n=(p.__n||0);
+   var k=Math.min(p.__n*(step||0.08),0.5);p.__n++;
+   el.style.setProperty("--d",k+"s");
+  });
+ }
+ /* hero: staggered entrance in reading order */
+ [].slice.call(d.querySelectorAll(".hero-in img,.hero h1,.hero .role,.hero p,.hero .meta")).forEach(function(el,i){
+  el.classList.add("reveal");if(el.tagName==="IMG")el.classList.add("rv-zoom");
+  el.style.setProperty("--d",(i*0.12)+"s");
+ });
+ tag(".pr b","");tag(".pr span","rv-pop",0.06);
+ tag(".sec-title","");tag(".intro","");tag(".banner","rv-zoom");
+ tag(".card .num","rv-left");tag(".card h2","");tag(".card .tag","");tag(".card > p","");
+ tag(".row","",0.1);tag(".links","");tag(".note","");
+ tag(".edu li","",0.07);tag(".edu a","");
+ var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});
+ },{threshold:0.12,rootMargin:"0px 0px -6% 0px"});
+ [].slice.call(d.querySelectorAll(".reveal")).forEach(function(el){io.observe(el)});
+ /* scroll progress bar */
+ var bar=d.createElement("div");bar.className="progress";d.body.appendChild(bar);
+ var t=false;
+ function upd(){t=false;var h=root.scrollHeight-innerHeight;bar.style.width=(h>0?Math.min(100,scrollY/h*100):0)+"%";}
+ addEventListener("scroll",function(){if(!t){t=true;requestAnimationFrame(upd);}},{passive:true});upd();
+}catch(e){document.documentElement.classList.remove("js");}
+})();
+</script>
 </body></html>
