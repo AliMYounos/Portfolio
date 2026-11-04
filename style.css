@@ -1,4 +1,4 @@
-:root{--ink:#1F3D36;--teal:#3A8F6B;--gold:#D9A441;--cream:#F6F3EA;--line:#E2DCC8}
+:root{--ink:#0A2540;--teal:#0369A1;--gold:#38BDF8;--cream:#F5F8FA;--line:#D9E3EC}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.6}
 a{color:inherit}
